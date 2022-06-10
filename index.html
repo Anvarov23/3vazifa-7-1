@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vazifa</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+</head>
+<body>
+    <div class="container my-5">
+        <h1 class="text-center text-success">Valyuta ayirboshlash bo'limi:</h1>
+        <form class=" js-form mb-5" method="POST">
+            <div class="row mx-5 d-flex justify-content-around">
+                <div class="col-4 mt-4">
+                <input type="number" class="form-control me-4 js-input" placeholder="UZ SUM">
+                </div>
+                <div class="col-4 mt-4">
+                    <select class="form-select js-select" aria-label="Currency">
+                        <option selected disabled>Currency</option>
+                        <option value="0.000080">Euro</option>
+                        <option value="0.000095">Dollar</option>
+                        <option value="0.0065">Rubl</option>
+                    </select>
+                </div>
+                <div class="d-flex mt-4">
+                    <button type="submit" class="btn btn-outline-success text-center d-block mx-auto">Change</button>
+                </div>
+            </div>
+        </form>
+        <h2 class="text-center js-result text-succes"></h2>
+    </div>
+    <script src="/js/main.js"></script>
+</body>
+</html>
